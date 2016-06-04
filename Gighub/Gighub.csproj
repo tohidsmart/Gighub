@@ -175,6 +175,10 @@
     <Compile Include="Migrations\201606041337241_OverrideConvetionOverConfiguration.Designer.cs">
       <DependentUpon>201606041337241_OverrideConvetionOverConfiguration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606041353593_PopulateDatabase.cs" />
+    <Compile Include="Migrations\201606041353593_PopulateDatabase.Designer.cs">
+      <DependentUpon>201606041353593_PopulateDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -250,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201606041337241_OverrideConvetionOverConfiguration.resx">
       <DependentUpon>201606041337241_OverrideConvetionOverConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606041353593_PopulateDatabase.resx">
+      <DependentUpon>201606041353593_PopulateDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
