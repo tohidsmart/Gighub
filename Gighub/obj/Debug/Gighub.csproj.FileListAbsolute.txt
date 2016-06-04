@@ -55,3 +55,5 @@ C:\Projects\Gighub\Gighub\obj\Debug\Gighub.dll
 C:\Projects\Gighub\Gighub\obj\Debug\Gighub.pdb
 C:\Projects\Gighub\Gighub\obj\Debug\Gighub.Migrations.InitialModel.resources
 C:\Projects\Gighub\Gighub\obj\Debug\Gighub.csproj.GenerateResource.Cache
+C:\Projects\Gighub\Gighub\obj\Debug\Gighub.Migrations.CreateGigTable.resources
+C:\Projects\Gighub\Gighub\obj\Debug\Gighub.Migrations.OverrideConvetionOverConfiguration.resources
