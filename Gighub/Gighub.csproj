@@ -13,13 +13,14 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Gighub</RootNamespace>
     <AssemblyName>Gighub</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,16 +43,14 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
@@ -97,6 +96,7 @@
       <Private>True</Private>
       <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
@@ -180,6 +180,14 @@
     <Compile Include="Migrations\201606041353593_PopulateDatabase.Designer.cs">
       <DependentUpon>201606041353593_PopulateDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606050737252_addForeignKeyToGig.cs" />
+    <Compile Include="Migrations\201606050737252_addForeignKeyToGig.Designer.cs">
+      <DependentUpon>201606050737252_addForeignKeyToGig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606050741381_UpdateNaming.cs" />
+    <Compile Include="Migrations\201606050741381_UpdateNaming.Designer.cs">
+      <DependentUpon>201606050741381_UpdateNaming.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -260,6 +268,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201606041353593_PopulateDatabase.resx">
       <DependentUpon>201606041353593_PopulateDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606050737252_addForeignKeyToGig.resx">
+      <DependentUpon>201606050737252_addForeignKeyToGig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606050741381_UpdateNaming.resx">
+      <DependentUpon>201606050741381_UpdateNaming.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
