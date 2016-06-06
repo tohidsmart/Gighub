@@ -9,5 +9,7 @@ namespace Gighub.Models
 		[StringLength(255)]
 		public string Name { get; set; }
 
+		public int Age { get; set; }
+
 	}
 }
