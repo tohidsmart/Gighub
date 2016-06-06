@@ -1,7 +1,6 @@
 namespace Gighub.Migrations
 {
-    using System;
-    using System.Data.Entity.Migrations;
+	using System.Data.Entity.Migrations;
     
     public partial class CreateGigTable : DbMigration
     {
