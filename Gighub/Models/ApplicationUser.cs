@@ -14,7 +14,6 @@ namespace Gighub.Models
         [StringLength(100)]
         public string Name { get; set; }
 
-
         public async Task<ClaimsIdentity> GenerateUserIdentityAsyn(UserManager<ApplicationUser> manager)
 		{
 			var userIdentity = await manager.CreateIdentityAsync(this, DefaultAuthenticationTypes.ApplicationCookie);

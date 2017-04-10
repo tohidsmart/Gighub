@@ -21,6 +21,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -164,33 +165,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201606041222159_InitialModel.cs" />
-    <Compile Include="Migrations\201606041222159_InitialModel.Designer.cs">
-      <DependentUpon>201606041222159_InitialModel.cs</DependentUpon>
+    <Compile Include="Migrations\201704100704181_initialmodel.cs" />
+    <Compile Include="Migrations\201704100704181_initialmodel.Designer.cs">
+      <DependentUpon>201704100704181_initialmodel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201606041312429_CreateGigTable.cs" />
-    <Compile Include="Migrations\201606041312429_CreateGigTable.Designer.cs">
-      <DependentUpon>201606041312429_CreateGigTable.cs</DependentUpon>
+    <Compile Include="Migrations\201704100754049_ArtistIdRequired.cs" />
+    <Compile Include="Migrations\201704100754049_ArtistIdRequired.Designer.cs">
+      <DependentUpon>201704100754049_ArtistIdRequired.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201606041337241_OverrideConvetionOverConfiguration.cs" />
-    <Compile Include="Migrations\201606041337241_OverrideConvetionOverConfiguration.Designer.cs">
-      <DependentUpon>201606041337241_OverrideConvetionOverConfiguration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201606041353593_PopulateDatabase.cs" />
-    <Compile Include="Migrations\201606041353593_PopulateDatabase.Designer.cs">
-      <DependentUpon>201606041353593_PopulateDatabase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201606050737252_addForeignKeyToGig.cs" />
-    <Compile Include="Migrations\201606050737252_addForeignKeyToGig.Designer.cs">
-      <DependentUpon>201606050737252_addForeignKeyToGig.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201606050741381_UpdateNaming.cs" />
-    <Compile Include="Migrations\201606050741381_UpdateNaming.Designer.cs">
-      <DependentUpon>201606050741381_UpdateNaming.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201606091030170_AddNameToApplicationUser.cs" />
-    <Compile Include="Migrations\201606091030170_AddNameToApplicationUser.Designer.cs">
-      <DependentUpon>201606091030170_AddNameToApplicationUser.cs</DependentUpon>
+    <Compile Include="Migrations\201704100803441_SeeGenres.cs" />
+    <Compile Include="Migrations\201704100803441_SeeGenres.Designer.cs">
+      <DependentUpon>201704100803441_SeeGenres.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -266,26 +251,14 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201606041222159_InitialModel.resx">
-      <DependentUpon>201606041222159_InitialModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201704100704181_initialmodel.resx">
+      <DependentUpon>201704100704181_initialmodel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606041312429_CreateGigTable.resx">
-      <DependentUpon>201606041312429_CreateGigTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201704100754049_ArtistIdRequired.resx">
+      <DependentUpon>201704100754049_ArtistIdRequired.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606041337241_OverrideConvetionOverConfiguration.resx">
-      <DependentUpon>201606041337241_OverrideConvetionOverConfiguration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606041353593_PopulateDatabase.resx">
-      <DependentUpon>201606041353593_PopulateDatabase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606050737252_addForeignKeyToGig.resx">
-      <DependentUpon>201606050737252_addForeignKeyToGig.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606050741381_UpdateNaming.resx">
-      <DependentUpon>201606050741381_UpdateNaming.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606091030170_AddNameToApplicationUser.resx">
-      <DependentUpon>201606091030170_AddNameToApplicationUser.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201704100803441_SeeGenres.resx">
+      <DependentUpon>201704100803441_SeeGenres.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

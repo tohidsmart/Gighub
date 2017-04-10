@@ -7,13 +7,13 @@ namespace Gighub.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.0.0-20911")]
-    public sealed partial class OverrideConvetionOverConfiguration : IMigrationMetadata
+    public sealed partial class SeeGenres : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(OverrideConvetionOverConfiguration));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(SeeGenres));
         
         string IMigrationMetadata.Id
         {
-            get { return "201606041337241_OverrideConvetionOverConfiguration"; }
+            get { return "201704100803441_SeeGenres"; }
         }
         
         string IMigrationMetadata.Source
