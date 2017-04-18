@@ -5,7 +5,9 @@ namespace Gighub.Controllers
 {
     using Gighub.Models;
     using System;
+    using System.Collections.Generic;
     using System.Linq;
+    using ViewModel;
 
     public class HomeController : Controller
     {
@@ -21,8 +23,14 @@ namespace Gighub.Controllers
                 .Include(g => g.Artist)
                 .Include(g => g.Genre)
                .Where(g => g.DateTime > DateTime.Now);
-            return View(upcomingGigs);
+            GigViewModel homeModel = new GigViewModel
+            {
+                UpComingGigs = upcomingGigs,
+                ShowAction = User.Identity.IsAuthenticated
+            };
+            return View("Gigs",homeModel);
         }
+
 
         public ActionResult About()
         {
@@ -39,4 +47,6 @@ namespace Gighub.Controllers
 
         }
     }
+
+    
 }
